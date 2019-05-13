@@ -1,7 +1,7 @@
-#### About:
-Container wrapper for [youtube-dl(https://github.com/ytdl-org/youtube-dl). Based on alpine python image. Image size 100-120mb.
+### About:
+Container wrapper for [youtube-dl](https://github.com/ytdl-org/youtube-dl). Based on alpine python image. Image size 100-120mb.
 
-#### Build and run:
+### Build and run:
 Build image:
 ```sh
 docker build -t crwnl3ss/youtube-dl .
@@ -11,7 +11,7 @@ Run container, set bind-mount direcotry for downloaded files and pass command li
 docker run --rm -v //c/Users/crownless/Downloads/youtube-dl:/tmp/Downloads/ crwnl3ss/youtube-dl --help --verbose
 ```
 
-#### Examples:
+### Examples:
 List all available download formats for video:
 ```sh
 docker run --rm crwnl3ss/youtube-dl -F https://youtu.be/<some-id>
